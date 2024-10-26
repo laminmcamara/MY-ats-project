@@ -1,0 +1,48 @@
+Applicant Tracking System
+This project is a simple Applicant Tracking System (ATS) built using Flask for the backend and Streamlit for the frontend. It allows users to view job listings, submit job applications, and check the status of their applications.
+
+Features
+Job Listings: Retrieve and display available job positions.
+Job Application: Submit applications with a resume and cover letter.
+Check Application Status: Simulate checking the status of an application.
+Technologies Used
+Backend: Flask
+Frontend: Streamlit
+Data Format: JSON
+File Handling: Support for PDF and Word documents for resumes and cover letters.
+CORS: Enabled for cross-origin requests.
+Installation
+Clone the repository:
+git clone <repository-url>
+cd <project-directory>
+Set up a virtual environment (optional but recommended):
+(bash) python -m venv venv venv/bin/activate # On Windows use venv\Scripts\activate
+
+Install the required packages:
+(bash) pip install Flask flask-cors streamlit requests
+
+Running the Application
+Backend
+Navigate to the backend directory. Run the Flask application: (bash) python app.py The backend will start on http://127.0.0.1:5000.
+
+Frontend
+Open another terminal window. Navigate to the frontend directory . Run the Streamlit application: (bash) streamlit run app.py The frontend will open in your web browser.
+
+API Endpoints
+Get Job Listings Endpoint: /jobs Method: GET Response: A JSON array of job listings.
+
+Apply for a Job Endpoint: /apply Method: POST Form Data: name: Applicant's full name email: Applicant's email address phone: Applicant's phone number job_title: Title of the job applied for resume: File upload for the resume cover_letter: File upload for the cover letter Response: Confirmation message upon successful submission.
+
+Usage
+Select a feature using the sidebar in the Streamlit app. For Job Listings, view available job positions. For Job Application, fill in the required fields and upload documents. For Check Application Status, enter your email to simulate checking the application status.
+
+License
+This project is open-source and available under the MIT License.
+
+Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
+
+Contact
+For questions or feedback, please reach out at [laminmasana@gmail.com].
+
+Click to add a cell.
